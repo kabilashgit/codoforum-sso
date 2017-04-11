@@ -33,8 +33,19 @@ $account = array();
  * 
  * Here comes your logic to check if the user is logged in or not.
  * A simple example would be using PHP SESSION
+ * if (isset($_SESSION['uid'])) {
+ *  
+ *   $account['uid'] = $_SESSION['uid']; //Your logged in user's userid
+ *   $account['name'] = $_SESSION['fname']; //Your logged in user's username
+ *   $account['mail'] = $_SESSION['email']; //Your logged in user's email id
+ *   $account['avatar'] = ''; //not used as of now
+ *}
+ 
+ 
+ 
+ 
  */
-if (USER_IS_LOGGED_IN) {
+if (USER_IS_LOGGED_IN) { 
 
     $account['uid'] = USERID; //Your logged in user's userid
     $account['name'] = USERNAME; //Your logged in user's username
